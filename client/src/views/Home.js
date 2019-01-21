@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Heading from "../components/Heading";
 
 class Home extends Component {
 	componentWillMount() {
@@ -8,6 +9,10 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
+				<Heading
+					content={["Integrity,", <br />, "Excellence,", <br />, "Progress."]}
+					image="/img/home/home-jumbotron.png"
+				/>
 				<h1>Home</h1>
 				Menu Content S&J Home Services Contact Home Page Content: Integrity,
 				Excellence, Progress. Smith & Jones Architects Et sed autem causae

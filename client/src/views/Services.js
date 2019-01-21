@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Heading from "../components/Heading";
 
 class Services extends Component {
 	componentWillMount() {
@@ -8,6 +9,10 @@ class Services extends Component {
 	render() {
 		return (
 			<div>
+				<Heading
+					content={"Services"}
+					image="/img/services/services-jumbotron.png"
+				/>
 				<h1>Services</h1>
 				Services Content Services Services include: completely synergize
 				resource taxing relationships via premier niche markets. Professionally

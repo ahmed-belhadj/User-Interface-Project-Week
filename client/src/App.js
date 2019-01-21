@@ -3,11 +3,10 @@ import { Route } from "react-router-dom";
 import styled from "styled-components";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import NavigationBar from "./components/NavigationBar";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./views/Home";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
-
 
 // Define our div, but with the use of props.theme this time
 const GlobalStyles = styled.div`

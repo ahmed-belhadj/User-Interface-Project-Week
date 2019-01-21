@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Heading from "../components/Heading";
 
 class Contact extends Component {
 	componentWillMount() {
@@ -8,6 +9,10 @@ class Contact extends Component {
 	render() {
 		return (
 			<div>
+				<Heading
+					content={"Contact Us"}
+					image="/img/contact/contact-jumbotron.png"
+				/>
 				<h1>Contact</h1>
 				Contactd Us Content Contact Us Get In Touch Email Address Enter Email
 				We'll never share your email with anyone else. How many buildings do you
