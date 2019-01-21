@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 
 class Contact extends Component {
+	componentWillMount() {
+		document.title = "Contact Us - S&J Architects";
+	}
+
 	render() {
 		return (
 			<div>
