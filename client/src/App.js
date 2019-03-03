@@ -1,12 +1,13 @@
-import React, { Component } from "react";
-import { Route } from "react-router-dom";
+import React, {Component} from "react";
+import {Route} from "react-router-dom";
 import styled from "styled-components";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import {library} from "@fortawesome/fontawesome-svg-core";
+import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 import Home from "./views/Home";
 import Services from "./views/Services";
 import Contact from "./views/Contact";
+import Footer from "./components/Footer";
 
 // Define our div, but with the use of props.theme this time
 const GlobalStyles = styled.div`
@@ -18,16 +19,17 @@ const GlobalStyles = styled.div`
 library.add(faBars, faTimes);
 
 class App extends Component {
-	render() {
-		return (
-			<GlobalStyles>
-				<NavigationBar />
-				<Route exact path="/" component={Home} />
-				<Route path="/services" component={Services} />
-				<Route path="/contact" component={Contact} />
-			</GlobalStyles>
-		);
-	}
+    render() {
+        return (
+            <GlobalStyles>
+                <NavigationBar />
+                <Route exact path="/" component={Home}/>
+                <Route path="/services" component={Services}/>
+                <Route path="/contact" component={Contact}/>
+                <Footer/>
+            </GlobalStyles>
+        );
+    }
 }
 
 export default App;
