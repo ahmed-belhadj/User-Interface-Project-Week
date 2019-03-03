@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, Container } from "reactstrap";
+import {Jumbotron, Container} from "reactstrap";
 import styled from "styled-components";
 
 const JumbotronHeader = styled.h1`
@@ -10,23 +10,27 @@ const JumbotronHeader = styled.h1`
 `;
 
 const Heading = props => {
-	return (
-		<div>
-			<Jumbotron
-				fluid
-				style={{
-					background: "url(" + props.image + ")",
-					backgroundSize: "cover"
-				}}
-			>
-				<Container fluid>
-					<JumbotronHeader className="display-3">
-						{props.content}
-					</JumbotronHeader>
-				</Container>
-			</Jumbotron>
-		</div>
-	);
+    return (
+        <div>
+            <Jumbotron
+                fluid
+                style={{
+                    background: "url(" + props.image + ") fixed center no-repeat",
+                    backgroundSize: "cover",
+                    height: "100vh",
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "flex-end"
+                }}
+            >
+                <Container fluid>
+                    <JumbotronHeader>
+                        {props.content}
+                    </JumbotronHeader>
+                </Container>
+            </Jumbotron>
+        </div>
+    );
 };
 
 export default Heading;
